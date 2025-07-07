@@ -1,0 +1,65 @@
+
+<!-- {{ $tags_range := sort (where (where site.RegularPages "Section" "posts") ".Params.pinned" true ) "Date" "desc" }}  -->
+<!-- begin section-tags -->
+<!-- <section class="section section-tags animate">
+  <div class="container">
+    <div class="row"> -->
+      
+      <div class="col col-4 col-d-12 flex-order-top-pinned">
+        <div class="widget-footer widget-pinned-posts">
+          <h3 class="widget-title">{{i18n "pinned_posts"}}</h3>
+          {{ range (sort (where (where site.RegularPages "Section" "posts") ".Params.pinned" true ) "Date" "desc" ) }}
+          <div class="pinned-posts">
+      
+            {{ if .Params.Image }}
+            <div class="article__head">
+              <a href="{{ .RelPermalink }}" class="pinned-posts__image" aria-hidden="true" tabindex="-1">
+                {{ if and (.Params.image) (.Params.video_embed) }}
+                <div class="video-icon">
+                  <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <polygon points="40,30 70,50 40,70"></polygon>
+                  </svg>
+                </div>
+                {{ end }}
+                {{ partial "image.html" (dict "context" . "src" .Params.image "alt" .Title) }}
+                <!-- <img class="lazy" data-src="{{.Params.Image | absURL }}" alt="{{ .Title }}"> -->
+              </a>
+            </div>
+            {{ end }}
+      
+            <div class="pinned-posts__content">
+      
+              <div class="article__meta">
+                {{ if .Params.tags }}
+                <div class="article__tags">
+                {{ range (.GetTerms "tags") }}
+                  <a href="{{ .Permalink }}" class="article__tag">{{ .LinkTitle }}</a>
+                {{ end }}
+                </div>
+                {{ end }}
+                <span class="article__date">•<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{- .Date | time.Format ($.Site.Params.dateFormat| default "2006-01-02") }}</time></span>
+              </div>
+      
+              <h4 class="pinned-posts__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+      
+              <div class="article__info">
+              {{ if .Params.authors }}
+                {{ range first 1 .Params.authors }}
+                  {{ with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+                  By <a class="article__author__name" href="{{ .Permalink }}">{{ .Params.name }}</a>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              </div>
+      
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    
+    
+    <!-- </div>
+  </div>
+</section> -->
+<!-- end section-tags -->

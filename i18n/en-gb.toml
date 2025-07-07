@@ -1,0 +1,595 @@
+[404_title]
+other = "Oops! Page not found."
+
+[404_info]
+other = "We can't seems to find the page you're looking for."
+
+[400_back]
+other = "Back to homepage"
+
+[about_me]
+other = "About Me"
+
+[actions]
+other = "Actions"
+
+[alert_caution]
+other = 'Caution'
+
+[alert_important]
+other = 'Important'
+
+[alert_note]
+other = 'Note'
+
+[alert_tip]
+other = 'Tip'
+
+[alert_warning]
+other = 'Warning'
+
+[alipay]
+other = "Alipay"
+
+[all]
+other = "All"
+
+[archives]
+other = "Archives"
+
+[authors]
+other = "Authors"
+
+[browse_docs]
+other = "Browse docs"
+
+[button_copy_url]
+other = "Copy URL"
+
+[button_fullscreen]
+other = "Fullscreen"
+
+[button_reload]
+other = "Reload"
+
+[button_run_game]
+other = "Run game"
+
+[button_social_share]
+other = "Share"
+
+[button_submit]
+other = "Submit"
+
+[buy_me_a_coffee]
+other = "Buy me a coffee"
+
+[categories]
+other = "Categories"
+
+[color_blue]
+other = "Blue"
+
+[color_blue_gray]
+other = "Blue Gray"
+
+[color_brown]
+other = "Brown"
+
+[color_cyan]
+other = "Cyan"
+
+[color_green]
+other = "Green"
+
+[color_indigo]
+other = "Indigo"
+
+[color_orange]
+other = "Orange"
+
+[color_pink]
+other = "Pink"
+
+[color_purple]
+other = "Purple"
+
+[color_red]
+other = "Red"
+
+[color_teal]
+other = "Teal"
+
+[color_yellow]
+other = "Yellow"
+
+[comments]
+other = "Comments"
+
+[comments_email]
+other = "Email"
+
+[comments_message]
+other = "Message"
+
+[comments_name]
+other = "Name"
+
+[comments_reply]
+other = "Reply"
+
+[comments_reply_to]
+other = "Reply to"
+
+[comments_submit]
+other = "Submit"
+
+[comments_url]
+other = "URL"
+
+[contact_name]
+other = "Name"
+
+[contact_email]
+other = "Email"
+
+[contact_email_help]
+other = "We'll never share your email with anyone else."
+
+[contact_file]
+other = "File"
+
+[contact_subject]
+other = "Subject"
+
+[contact_message]
+other = "Message"
+
+[copyright]
+other = "Copyright"
+
+[featured_posts]
+other = "Featured Posts"
+
+[popular_topics]
+other = "Popular Topics"
+
+[font_size]
+other = "Font Size"
+
+[font_size_lg]
+other = "Large"
+
+[font_size_md]
+other = "Medium"
+
+[font_size_sm]
+other = "Small"
+
+[font_size_xl]
+other = "Extra Large"
+
+[font_size_xs]
+other = "Extra Small"
+
+[funding_alipay]
+other = "Alipay"
+
+[funding_buymeacoffee]
+other = "Buy Me a Coffee"
+
+[funding_ko_fi]
+other = "Ko-fi"
+
+[funding_open_collective]
+other = "Open Collective"
+
+[funding_patreon]
+other = "Patreon"
+
+[funding_wechat]
+other = "Wechat"
+
+[go_back]
+other = "Go back"
+
+[home]
+other = "Home"
+
+[language]
+other = "Language"
+
+[liberapay]
+other = "Liberapay"
+
+[load]
+other = "Load"
+
+[load_more]
+other = "Load More"
+
+[mode]
+other = "Mode"
+
+[noscript_info]
+other = "Your browser does not support JavaScript."
+
+[offline_title]
+other = "Oops! You're offline."
+
+[offline_info]
+other = """
+<p>It seems there is a problem of your connection, please check your network status.</p>
+<p>Please get in touch with us if you think this is a server error. Thank you.</p>
+"""
+
+[pagination_title]
+other = "Page {{ .PageNumber }}"
+
+[palette]
+other = "Palette"
+
+[patreon]
+other = "Patreon"
+
+[paypal]
+other = "Paypal"
+
+[post_count]
+one = "{{ .Count }} post in total"
+other = "{{ .Count }} posts in total"
+
+[post_date]
+other = "created on {{ .createdOn }}{{ with .updatedOn }}, updated on {{ . }}{{ end }}."
+
+[posts]
+other = "Posts"
+
+[profile]
+other = "Profile"
+
+[read_more]
+other = "Read More"
+
+[reading_time]
+other = "{{ .ReadingTime }} min read"
+
+[recent_posts]
+other = "Recent Posts"
+
+[related_posts]
+other = "Related Posts"
+
+[pinned_posts]
+other = "Highlights"
+
+[repo_action_edit]
+other = "Edit this page"
+
+[repo_action_view]
+other = "View page source"
+
+[repo_title]
+other = "Repository"
+
+[search]
+other = "Search"
+
+[search_advanced]
+other = "Advanced"
+
+[search_date]
+other = "Date"
+
+[search_input_placeholder]
+other = "Type to search"
+
+[search_missing_keywords]
+other = "Please enter search keywords"
+
+[search_no_results]
+other = "No results found"
+
+[search_score]
+other = "Score"
+
+[search_shortcut]
+other = "Press {{ .Shortcut }} to search"
+
+[search_sorting]
+other = "Sorting"
+
+[search_stat]
+other = "Found {{ .Total }} results"
+
+[sections]
+other = "Sections"
+
+[series]
+other = "Series"
+
+[settings]
+other = "Settings"
+
+[social_artstation]
+other = "ArtStation"
+
+[social_bilibili]
+other = "Bilibili"
+
+[social_bitbucket]
+other = "Bitbucket"
+
+[social_codeberg]
+other = "Codeberg"
+
+[social_discord]
+other = "Discord"
+
+[social_discourse]
+other = "Discourse"
+
+[social_dockerhub]
+other = "Docker Hub"
+
+[social_email]
+other = "Email"
+
+[social_facebook]
+other = "Facebook"
+
+[social_facebookgroup]
+other = "Facebook Group"
+
+[social_github]
+other = "GitHub"
+
+[social_gitlab]
+other = "GitLab"
+
+[social_instagram]
+other = "Instagram"
+
+[social_itchio]
+other = "itch.io"
+
+[social_kaggle]
+other = "Kaggle"
+
+[social_lastfm]
+other = "Last.fm"
+
+[social_liberapay]
+other = "Liberapay"
+
+[social_linkedin]
+other = "LinkedIn"
+
+[social_mastodon]
+other = "Mastodon"
+
+[social_medium]
+other = "Medium"
+
+[social_patreon]
+other = "Patreon"
+
+[social_paypal]
+other = "PayPal"
+
+[social_pinterest]
+other = "Pinterest"
+
+[social_qq]
+other = "QQ"
+
+[social_quora]
+other = "Quora"
+
+[social_reddit]
+other = "Reddit"
+
+[social_rss]
+other = "RSS"
+
+[social_stackoverflow]
+other = "Stack Overflow"
+
+[social_telegram]
+other = "Telegram"
+
+[social_tipeee]
+other = "Tipeee"
+
+[social_tiktok]
+other = "TikTok"
+
+[social_tumblr]
+other = "Tumblr"
+
+[social_twitter]
+other = "Twitter"
+
+[social_website]
+other = "Website"
+
+[social_weibo]
+other = "Weibo"
+
+[social_x]
+other = "X"
+
+[social_xing]
+other = "XING"
+
+[social_youtube]
+other = "YouTube"
+
+[social_zhihu]
+other = "Zhihu"
+
+[stats]
+other = "Stats"
+
+[table_of_contents]
+other = "Contents"
+
+[tags]
+other = "Tags"
+
+[taxonomies]
+other = "Taxonomies"
+
+[theme_auto]
+other = "Auto"
+
+[theme_dark]
+other = "Dark"
+
+[theme_light]
+other = "Light"
+
+[tipeee]
+other = "Tipeee"
+
+[toggle_sidebar]
+other = "Toggle sidebar"
+
+[translations]
+other = "Translations"
+
+[try_again]
+other = "Try again"
+
+[wechat]
+other = "WeChat"
+
+[back_to_top]
+other = "Back to top"
+
+[hero__title]
+other = "Stop Betting, Start Investing"
+[hero__description]
+other = "Real-time tips, analysis, and insights. elevate your game with expert advice and market insights."
+
+[authors_all]
+other = "See all Authors"
+
+[footer_description]
+other = "TipXArea is the next-generation sports social platform. We continually innovate to elevate the betting experience by blending real-time social interaction with deep market insights. Enjoy the community fun while embracing a professional investment mindset.Stop Betting, Start Investing."
+
+[authors_section_title]
+other= "Meet our Authors"
+
+# -------------------------------
+# Category Settings
+# -------------------------------
+# You can add categories to the homepage. Each category will show the recent posts by the category.
+# The category name should be the same as the folder name in the content directory.
+# The category name should be in lowercase and hyphenated.
+
+## Only home will not apply on markdown files
+[category_home]
+other="Home"
+
+[category_football]
+other="Football"
+
+[category_basketball]
+other="Basketball"
+
+[category_esport]
+other="eSport"
+
+[category_racing]
+other="Racing"
+
+[category_fight]
+other="Fight"
+
+[category_tags]
+other="Tags"
+
+# -------------------------------
+# Subcategory Settings
+# -------------------------------
+# Biggest Leagues of football
+[subcategory_football_epl]
+other = "English Premier League"
+[subcategory_football_laliga]
+other = "La Liga"
+[subcategory_football_bundesliga]
+other = "Bundesliga"
+[subcategory_football_seriea]
+other = "Serie A"
+[subcategory_football_ligue1]
+other = "Ligue 1"
+[subcategory_football_mls]
+other = "Major League Soccer"
+[subcategory_football_Saudi_Pro_League]
+other = "Saudi Pro League"
+## Biggest Leagues of FIFA
+[subcategory_football_worldcup]
+other = "FIFA World Cup"
+[subcategory_football_euro]
+other = "UEFA Euro"
+[subcategory_football_afcon]
+other = "Africa Cup of Nations"
+[subcategory_football_copaamerica]
+other = "Copa América"
+[subcategory_football_asiancup]
+other = "AFC Asian Cup"
+[subcategory_football_concacaf]
+other = "CONCACAF Gold Cup"
+[subcategory_football_conmebol]
+other = "CONMEBOL Championship"
+[subcategory_football_uefa]
+other = "UEFA Nations League"
+
+# Biggest Leagues of basketball
+[subcategory_basketball_nba]
+other = "NBA"
+[subcategory_basketball_ncaab]
+other = "NCAA Basketball"
+[subcategory_basketball_euroleague]
+other = "EuroLeague"
+[subcategory_basketball_FIBA_]
+other = "FIBA (International Basketball Federation)"
+
+# Biggest Leagues of esports
+[subcategory_esport_lol]
+other = "League of Legends"
+[subcategory_esport_csgo]
+other = "CS:GO"
+[subcategory_esport_dota2]
+other = "Dota 2"
+[subcategory_esport_ow]
+other = "Overwatch"
+[subcategory_esport_mobilelegends]
+other = "Mobile Legends"
+[subcategory_esport_callofduty]
+other = "Call of Duty"
+[subcategory_esport_wildrift]
+other = "League of Legends: Wild Rift"
+[subcategory_esport_valorant]
+other = "Valorant"
+[subcategory_esport_apexlegends]
+other = "Apex Legends"
+[subcategory_esport_figjhtinggames]
+other = "Fighting Games"
+
+# Biggest Leagues of racing
+[subcategory_racing_f1]
+other = "Formula 1"
+[subcategory_racing_nascar]
+other = "NASCAR"
+[subcategory_racing_wrc]
+other = "World Rally Championship"
+[subcategory_racing_motogp]
+other = "MotoGP"
+
+# Biggest Leagues of fight
+[subcategory_fight_mma]
+other = "Mixed Martial Arts (MMA)"
+[subcategory_fight_boxing]
+other = "Boxing"

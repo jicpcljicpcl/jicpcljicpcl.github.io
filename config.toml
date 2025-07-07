@@ -1,0 +1,267 @@
+#-------------------------------
+# General Site Settings
+baseURL = "https://jicpcljicpcl.github.io/"
+languageCode = "en-gb"
+title = "eSport News"
+
+googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
+defaultContentLanguage = "en-gb"
+hasCJKLanguage = true # Uncomment it if your content contains Chinese/Japanese/Korean Languages.
+defaultContentLanguageInSubdir = true
+
+dateFormat = ":date_long"
+#-------------------------------
+# Pagination settings:
+
+# For Hugo versions 0.128.0 and above, use the following settings:
+# This will set the number of items per page for newer versions.
+[pagination]
+  pagerSize = 12
+
+# For Hugo versions below 0.128.0, uncomment the line below and comment out the [pagination] block above:
+#paginate = 12 # Sets the number of items per page for older versions.
+
+#-------------------------------
+
+
+[languages]
+
+[languages.en-gb]
+  languageName = "English"
+  weight = 1
+  #contentDir = "content/en"
+  [languages.en-gb.params]
+    dateFormat = "January 2, 2006"
+    
+[languages.zh-hant]
+  languageName = "中文"
+  weight = 2
+  #contentDir = "content/zh"
+  [languages.zh-hant.params]
+    dateFormat = "2006年01月02日"
+
+
+#-------------------------------
+#Main Menu
+[menu]
+  [[menu.main]]
+    name = "home"
+    url = "/"
+    weight = 1
+
+  # [[menu.main]]
+  #   name = "football"
+  #   url = "/football/"
+  #   weight = 2
+
+  # [[menu.main]]
+  #   name = "basketball"
+  #   url = "/basketball/"
+  #   weight = 3
+
+  [[menu.main]]
+    name = "esport"
+    url = "/esport/"
+    weight = 4
+
+  [[menu.main]]
+    name = "tags"
+    url = "/tags/"
+    weight = 5
+
+
+#   [[menu.main]]
+#     name = "Pages"
+#     weight = 5
+#     hasChildren = true
+
+#   [[menu.main]]
+#     parent = "Pages"
+#     name = "About"
+#     url = "/about/"
+#     weight = 1
+
+#   [[menu.main]]
+#     parent = "Pages"
+#     name = "Elements"
+#     url = "/elements/"
+#     weight = 2
+
+#   [[menu.main]]
+#     parent = "Pages"
+#     name = "Contact"
+#     url = "/contact/"
+#     weight = 3
+
+#   [[menu.main]]
+#     parent = "Pages"
+#     name = "Videos"
+#     url = "/videos/"
+#     weight = 4
+
+#   [[menu.main]]
+#     parent = "Pages"
+#     name = "Featured"
+#     url = "/featured/"
+#     weight = 5
+
+  # Call to action button
+  # [params.cta_button]
+  #   enable = true
+  #   cta_button_link = "/contact/"
+  #   cta_button_text = "Get in touch"
+
+[params]
+  description="esport blends sports betting with social interaction, market insights, and real-time news coverage—where fun meets strategy. Stop Betting, Start Investing."
+  baseImage = "images/logo.png"
+  keywords = "tips,sports, betting, investing, news,basketball,football,esport, stop betting, start investing"
+  logo = "images/favicon.png" # You can add own logo.
+  logo_dark = "images/favicon.png"
+
+  #-------------------------------
+  # Hero Settings
+  [params.hero]
+   enable = true
+   hero__title = "Ref to i18n setting"
+   hero__description = "Ref to i18n setting"
+
+
+  #-------------------------------
+  # Tags Section Settings
+  [params.tags_section]
+    enable = true
+    number_posts = 3 # To control how many posts to show under each tag section, set the value to a number. Three is the default.
+    number_columns = 3 # You can specify the number of columns from 1-4 for large screen resolution. By default, the theme uses three columns grid.
+
+  [[params.tag]]
+    tag = "NBA"
+
+  # [[params.tag]]
+  #   tag = "shopping"
+
+  # [[params.tag]]
+  #   tag = "business"
+
+  # [[params.tag]]
+  #   tag = "food"
+
+  # [[params.tag]]
+  #   tag = "sport"
+
+  # You can add many tag sections to the homepage; each section will show the recent posts by the tag.
+
+
+  #-------------------------------
+  # Authors Section Settings
+  [params.authors_section]
+    enable = true
+    section_title = "Ref to i18n setting"
+
+
+  #-------------------------------
+  # Footer Settings
+  [params.footer]
+   footer__description = "Ref to i18n setting"
+
+  # Social Links
+  
+  [[params.social]]
+   icon = "fa-brands fa-x-twitter"
+   name = "Twitter"
+   link = "https://twitter.com"
+
+  [[params.social]]
+   icon = "fa-brands fa-instagram"
+   name = "Instagram"
+   link = "https://Instagram.com"
+
+  [[params.social]]
+   icon = "fa-brands fa-facebook"
+   name = "Facebook"
+   link = "https://facebook.com"
+  
+  [[params.social]]
+   icon = "fa-brands fa-youtube"
+   name = "Youtube"
+   link = "https://youtube.com"
+
+  [[params.social]]
+    icon = "fa-brands fa-telegram"
+    name = "Telegram"
+    link = "https://telegram.me"
+
+  [[params.social]]
+    icon = "fa-brands fa-whatsapp"
+    name = "WhatsApp"
+    link = "https://www.whatsapp.com"
+
+  # Other icons can be found at https://fontawesome.com/icons
+
+
+  # Newsletter
+  [params.mailchimp]
+    enable = false
+    mailchimp__title = "Get interesting news"
+    mailchimp__description = "Subscribe to our newsletter and we’ll send you the emails of latest posts."
+    mailchimp__identifier = "gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp" # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
+    mailchimp__input__text = "Your email address"
+    mailchimp__button__text = "Subscribe"
+
+
+  #-------------------------------
+  # Contact Settings
+  [params.contact]
+    email = "your@email.com" # Add your form_id
+
+    # NOTE
+    # Danto comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
+
+  #-------------------------------
+  # Comment Section (Disqus)
+  [params.disqus]
+    enable = false
+    disqusShortname = "anvod-studio-test" # Add your shortname for Disqus Comment. For example anvod-studio-test
+
+  [params.share]
+    enable = false
+
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "ROBOTS","xml"]
+
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  noClasses = false
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.3
+  filename = "sitemap.xml"
+
+[outputFormats.xml]
+  mediatype = "application/xml"
+  baseName = "sitemap"
+  isPlainText = true
+  notAlternative = true
+
+[minify]
+  disableXML = true
+
+  [minify.tdewolff.html]
+    keepWhitespace = false
+    keepDocumentTags = true
+    keepEndTags = false
+    keepQuotes = false
+    keepComments = false

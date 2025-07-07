@@ -1,0 +1,80 @@
+{{ define "main" }}
+
+{{ $isTags := eq .Section "tags" }}
+{{ $isPosts := or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "latest") }}
+{{ $isCategory := and (not $isTags) (not $isPosts) (isset .Params "category") }}
+
+{{ if $isTags }}
+
+<!-- begin tags -->
+<section class="section tags">
+  <div class="tags__inner">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="tag__info">
+            <h1 class="tag__title">{{ humanize .Title }} <span class="tag__counter">{{ len .Pages }}</span></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container animate">
+      <div class="row">
+        {{ range .Data.Pages }}
+          <div class="col col-4 col-d-6 col-t-12">
+            {{ partial "article.html" (dict "context" .) }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end tags -->
+
+{{ else if $isPosts }}
+
+<!-- begin hero -->
+<section class="hero hero--left">
+  <div class="container">
+    {{ if .Title }}
+      <h1 class="hero__title">{{ .Title }}</h1>
+    {{ end }}
+  </div>
+</section>
+<!-- end hero -->
+
+<section class="section">
+  <div class="container">
+    <div class="row grid">
+      {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+      {{ range $paginator.Pages }}
+        {{ partial "article.html" (dict "context" . "class" "col col-4 col-d-6 col-t-12 animate article--grid") }}
+      {{ end }}
+    </div>
+  </div>
+  {{ partial "pagination.html" . }}
+</section>
+
+{{ else if $isCategory }}
+  {{ $cat := .Params.category }}
+  {{ $pages := where .Site.RegularPages "Params.category" $cat }}
+  {{ $paginator := .Paginate $pages }}
+  {{ partial "category/default.html" (dict "title" (i18n (print "category_" $cat)) "paginator" $paginator "pages" $paginator.Pages "counter" (len $pages)) }}
+
+{{ else }}
+
+<section class="section">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <ul>
+      {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
+
+{{ end }}
+
+{{ end }}

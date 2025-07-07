@@ -1,0 +1,50 @@
+<!-- begin featured-post -->
+<section class="section featured-post animate">
+  <div class="container">
+    <div class="section__inner">
+
+      <h2 class="screen-reader-text">Featured</h2>
+      <div class="row">
+
+        {{ $featuredPosts := first 5 (where (where (where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.featured" true) ".Params.draft" "ne" true) }}
+
+        <div class="col col-3 col-d-12">
+          <div class="row">
+            {{ range $i, $p := $featuredPosts }}
+              {{ if lt $i 2 }}
+              <div class="col col-12 col-d-6 col-t-12">
+                {{ partial "article.html" (dict "context" $p) }}
+              </div>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+
+        <div class="col col-6 col-d-12">
+          <div class="row">
+            {{ if ge (len $featuredPosts) 3 }}
+              <div class="col col-12 col-t-12">
+                {{ partial "article.html" (dict "context" (index $featuredPosts 2) "class" "article--big") }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+
+        <div class="col col-3 col-d-12">
+          <div class="row">
+            {{ range $i, $p := $featuredPosts }}
+              {{ if and (ge $i 3) (lt $i 5) }}
+              <div class="col col-12 col-d-6 col-t-12">
+                {{ partial "article.html" (dict "context" $p) }}
+              </div>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- end featured-post -->

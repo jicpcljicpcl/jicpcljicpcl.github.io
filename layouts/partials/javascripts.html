@@ -1,0 +1,6 @@
+{{ $script := resources.Get "js/scripts.js" }}
+{{ $commonJs := resources.Get "js/common.js" }}
+
+<script rel="preload" as="script" src="{{ ($script | minify | fingerprint).RelPermalink }}"></script>
+<script rel="preload" as="script" src="{{ ($commonJs | minify | fingerprint).RelPermalink }}"></script>
+<script rel="prefetch" as="script" src="{{ "/js/fuse.js" | absURL }}"></script>

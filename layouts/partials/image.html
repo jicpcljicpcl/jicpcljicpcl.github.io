@@ -1,0 +1,23 @@
+{{/*
+    Usage:
+      {{ partial "image.html" (dict "context" . "src" .Params.image "alt" .Title) }}
+  */}}
+  
+  {{ $ctx := .context }}
+  {{ $src := .src }}
+  {{ $alt := .alt | default "image" }}
+  
+  {{ if $src }}
+    {{ if strings.HasPrefix $src "http" }}
+      <img class="lazy" data-src="{{ $src }}" alt="{{ $alt }}" loading="lazy">
+    {{ else }}
+      {{ with $ctx.Resources.GetMatch $src }}
+        <img class="lazy" data-src="{{ .RelPermalink }}" alt="{{ $alt }}" loading="lazy">
+      {{ else }}
+        <img class="lazy" data-src="/images/default.jpg" alt="{{ $alt }}">
+      {{ end }}
+    {{ end }}
+  {{ else }}
+    <img class="lazy" data-src="/images/default.jpg" alt="{{ $alt }}">
+  {{ end }}
+  

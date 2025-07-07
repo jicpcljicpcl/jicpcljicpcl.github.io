@@ -1,0 +1,28 @@
+{{ if (.Site.Params.authors_section.enable) }}
+<div class="col col-4 col-d-12 flex-order-top-author">
+  <div class="section-authors__inner">
+    {{ $authors := ($.Site.GetPage "taxonomyTerm" "authors").Pages }}
+
+    {{ if .Site.Params.authors_section.section_title }}
+    <h3 class="section-authors__title">{{i18n "authors_section_title"}}</h3>
+    {{ end }}
+
+    <div class="section-authors__content">
+      <ul class="section-authors__list list-reset">
+        <li class="section-authors__box">
+        {{ $bySortRank := sort $authors ".Params.sortrank" "desc" }}
+        {{ range $bySortRank }}
+          <a href="{{ .Permalink }}" class="section-authors__image">
+            <img class="lazy" data-src="{{ .Site.BaseURL }}images/authors/{{ .Params.image }}" alt="{{ .Params.name }}">
+          </a>
+        {{ end }}
+        </li>
+      </ul>
+      {{ if gt $authors 4 }}
+      <a href="{{"authors" | relLangURL}}" class="section-authors__link">{{i18n "authors_all"}}</a>
+      {{ end }}
+    </div>
+
+  </div>
+</div>
+{{ end }}

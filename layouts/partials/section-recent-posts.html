@@ -1,0 +1,110 @@
+
+
+{{ $number_columns := 8 }}
+<!-- {{ if eq .Site.Params.tags_section.number_columns 1 }}
+  {{ $number_columns = 12 }}
+{{ else if eq .Site.Params.tags_section.number_columns 2 }}
+  {{ $number_columns = 6 }}
+{{ else if eq .Site.Params.tags_section.number_columns 3 }}
+  {{ $number_columns = 4 }}
+{{ else if eq .Site.Params.tags_section.number_columns 4 }}
+  {{ $number_columns = 3 }}
+{{ end }} -->
+
+{{ $number_posts := 0 }}
+{{ if .Site.Params.tags_section.number_posts }}
+  {{ $number_posts = .Site.Params.tags_section.number_posts }}
+{{ else }}
+  {{ $number_posts = 3 }}
+{{ end }}
+
+
+{{ $tags_range := sort (where site.RegularPages "Section" "posts") "Date" "desc" }} 
+<!-- begin section-tags -->
+<section class="section section-recent-posts animate">
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col col-12">
+        <div class="section__inner">
+
+          <div class="section__info">
+            <div class="section__head">
+          
+              <h2 class="section__title">{{i18n "recent_posts"}}</h2>
+              {{ if lt $number_posts $tags_range }}
+              <a class="button" href="{{ "/posts/" | relLangURL }}">View all <i class="ion ion-ios-arrow-forward"></i></a>
+              {{ else }}
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="row">
+            {{ range $index, $element := first $number_posts $tags_range }}
+            <div class="col {{ if and (gt .Site.Params.tags_section.number_columns 0) (le .Site.Params.tags_section.number_columns 4) }}col-{{ $number_columns }} col-d-6 col-t-12{{ else }}col-4 col-d-6 col-t-12{{ end }}">
+              {{ partial "article.html" (dict "context" . "index" $index) }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div> -->
+      <div class="col col-8 col-d-12">
+        <div class="widget-footer widget-recent-posts">
+          <h3 class="widget-title">{{i18n "recent_posts"}}</h3>
+          {{ $counter := 0 }}
+          {{ range ( where site.RegularPages "Section" "posts" | first 2 ) }}
+          {{ $counter = add $counter 1 }}
+          <div class="recent-posts">
+      
+            {{ if .Params.Image }}
+            <div class="article__head">
+              <a href="{{ .RelPermalink }}" class="recent-posts__image" aria-hidden="true" tabindex="-1">
+                {{ if and (.Params.image) (.Params.video_embed) }}
+                <div class="video-icon">
+                  <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <polygon points="40,30 70,50 40,70"></polygon>
+                  </svg>
+                </div>
+                {{ end }}
+                {{ partial "image.html" (dict "context" . "src" .Params.image "alt" .Title) }}
+                <!-- <img class="lazy" data-src="{{.Params.Image | absURL }}" alt="{{ .Title }}"> -->
+              </a>
+            </div>
+            {{ end }}
+      
+            <div class="recent-posts__content">
+      
+              <div class="article__meta">
+                {{ if .Params.tags }}
+                <div class="article__tags">
+                {{ range (.GetTerms "tags") }}
+                  <a href="{{ .Permalink }}" class="article__tag">{{ .LinkTitle }}</a>
+                {{ end }}
+                </div>
+                {{ end }}
+                <!-- <span class="article__date">•<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2 Jan, 2006" }}</time></span> -->
+                <span class="article__date">•<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{- .Date | time.Format ($.Site.Params.dateFormat| default "2006-01-02") }}</time></span>
+              </div>
+      
+              <h4 class="recent-posts__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+      
+              <div class="article__info">
+              {{ if .Params.authors }}
+                {{ range first 1 .Params.authors }}
+                  {{ with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+                  By <a class="article__author__name" href="{{ .Permalink }}">{{ .Params.name }}</a>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              </div>
+      
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    
+    
+    </div>
+  </div>
+</section>
+<!-- end section-tags -->

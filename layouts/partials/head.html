@@ -1,0 +1,145 @@
+{{/* Pre-processed metadata: title */}}
+{{ $siteTitle := .Site.Title }}
+{{ $pageTitle := $siteTitle }}
+{{ if not .IsHome }}
+  {{ $name := "" }}
+  {{ with .Params.name }}{{ $name = printf " | %s" . }}{{ end }}
+  {{ $pageTitle = printf "%s%s | %s" .Title $name $siteTitle }}
+{{ end }}
+
+{{/* Pre-processed metadata: description */}}
+{{ $description := "" }}
+{{ if .IsHome }}
+  {{ $description = .Site.Params.description }}
+{{ else if .Description }}
+  {{ $description = .Description }}
+{{ else if .IsPage }}
+  {{ $description = .Summary | plainify }}
+{{ else }}
+  {{ $description = .Site.Params.description }}
+{{ end }}
+
+{{/* Pre-processed metadata: image */}}
+{{ $image := "" }}
+{{ if .IsHome }}
+  {{ $image = .Site.Params.baseImage | relLangURL | absURL }}
+{{ else if .Params.image }}
+  {{ $image = printf "%s%s" .Permalink .Params.image }}
+{{ end }}
+
+{{/* Pre-processed metadata: tags */}}
+{{ $tags := "" }}
+{{ if .IsHome }}
+  {{ $tags = .Site.Params.keywords }}
+{{ else if .Params.tags }}
+  {{ $tags = delimit .Params.tags ", " }}
+{{ else }}
+  {{ $tags = .Site.Params.tags }}
+{{ end }}
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="{{ "favicon.svg" | relURL }}">
+
+  <!-- Preconnect -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- SEO: Basic -->
+  <title>{{ $pageTitle }}</title>
+  <meta name="description" content="{{ $description }}">
+  <meta name="keywords" content="{{ $tags }}">
+  <link rel="canonical" href="{{ .Permalink }}" />
+
+  <!-- AI / LLM Friendly -->
+  <meta name="published_date" content="{{ .Date.Format "2006-01-02" }}">
+  <meta name="section" content="{{ with .Params.category }}{{ . }}{{ with $.Params.subcategory }} / {{ . }}{{ end }}{{ end }}">
+  <meta name="tags" content="{{ $tags }}">
+
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end }}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $pageTitle }}">
+  <meta name="twitter:description" content="{{ $description }}">
+  <meta name="twitter:image" content="{{ $image }}">
+
+  <!-- Facebook OpenGraph -->
+  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}" />
+  <meta property="og:title" content="{{ $pageTitle }}">
+  <meta property="og:description" content="{{ $description }}">
+  <meta property="og:image" content="{{ $image }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ $siteTitle }}">
+
+  <!-- Fonts -->
+  <!-- <link rel="preload"  href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,700;1,400&family=Poppins:wght@400;500;700&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,700;1,400&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> -->
+
+  <!-- LCP Preload for Key Images -->
+  {{ if .IsHome }}
+    {{ $featuredPosts := first 3 (where (where (where .Site.RegularPages "Type" "in" site.Params.mainSections) ".Params.featured" true) ".Params.draft" "ne" true) }}
+    {{ range $p := $featuredPosts }}
+      {{ with $p.Params.image }}
+        {{ with $p.Resources.GetMatch . }}
+          <link rel="preload" as="image" href="{{ .RelPermalink | absURL }}" fetchpriority="high">
+        {{ else }}
+          <link rel="preload" as="image" href="{{ $p.Permalink | relURL }}{{ . }}" fetchpriority="high">
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ with .Site.Params.hero.hero__image }}
+      <link rel="preload" as="image" href="{{ . | relLangURL | absURL }}" fetchpriority="high">
+    {{ end }}
+
+  {{ else if .IsPage }}
+    {{ with .Params.image }}
+      {{ with $.Resources.GetMatch . }}
+        <link rel="preload" as="image" href="{{ .RelPermalink | absURL }}" fetchpriority="high">
+      {{ else }}
+        <link rel="preload" as="image" href="{{ . | relURL | absURL }}" fetchpriority="high">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  <!-- CSS Inline -->
+  {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
+  <link rel="preload" href="{{ $style.RelPermalink }}" as="style" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+  <link href="{{ $style.RelPermalink }}" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+  <noscript><link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous"></noscript>
+  
+  <!-- Web App & PWA -->
+  <meta name="theme-color" content="##f8ce5f" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="/icons/icon.png">
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Color Scheme Script -->
+  <script>
+    {{ if eq .Site.Params.color_scheme "auto" }}
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.setAttribute("dark", "");
+      document.documentElement.classList.add('dark-mode');
+    }
+    {{ else if eq .Site.Params.color_scheme "light" }}
+      document.documentElement.setAttribute("light", "");
+      document.documentElement.classList.add('light-mode');
+    {{ else if eq .Site.Params.color_scheme "dark" }}
+      document.documentElement.setAttribute("dark", "");
+      document.documentElement.classList.add('dark-mode');
+    {{ else }}
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.setAttribute("dark", "");
+      document.documentElement.classList.add('dark-mode');
+    }
+    {{ end }}
+  </script>
+</head>

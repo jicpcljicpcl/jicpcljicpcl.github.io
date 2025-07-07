@@ -1,0 +1,11 @@
+.flex-order-top-pinned{
+    @media (max-width: $desktop) {
+        order: -1;
+    }
+}
+
+.flex-order-top-author{
+    @media (max-width: $wide) {
+        order: -1;
+    }
+}
