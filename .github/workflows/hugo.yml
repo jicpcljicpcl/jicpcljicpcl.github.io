@@ -63,7 +63,7 @@ jobs:
         with:
           deploy_key: ${{ secrets.FORACTION }}
           external_repository: jicpcljicpcl/jicpcljicpcl.github.io # <- 改成你自己的 user github page
-          publish_dir: ./public # <- 指定編譯後的成品放置的資料夾
+          publish_dir: ./ # <- 指定編譯後的成品放置的資料夾
           publish_branch: build # <- 遠端 repo 的目標分支
 
   # Deployment job
