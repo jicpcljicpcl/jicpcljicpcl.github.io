@@ -23,6 +23,7 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest' # Or a specific version like '0.127.0'
+          extended: true 
 
       - name: Build Hugo site for test (if not default branch)
         if: github.ref_name != github.event.repository.default_branch
