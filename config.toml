@@ -2,7 +2,7 @@
 # General Site Settings
 baseURL = "https://jicpcljicpcl.github.io/"
 languageCode = "en-gb"
-title = "eSport News"
+title = "AllMoneyBackToMe eSport News"
 
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
 defaultContentLanguage = "en-gb"
@@ -112,9 +112,9 @@ dateFormat = ":date_long"
   #   cta_button_text = "Get in touch"
 
 [params]
-  description="esport blends sports betting with social interaction, market insights, and real-time news coverage—where fun meets strategy. Stop Betting, Start Investing."
+  description="AllMoneyBackToMe esport blends sports betting with social interaction, market insights, and real-time news coverage—where fun meets strategy. Stop Betting, Start Investing."
   baseImage = "images/logo.png"
-  keywords = "tips,sports, betting, investing, news,basketball,football,esport, stop betting, start investing"
+  keywords = "allmoneybacktome,tips,sports, betting, investing, news,basketball,football,esport, stop betting, start investing"
   logo = "images/favicon.png" # You can add own logo.
   logo_dark = "images/favicon.png"
 

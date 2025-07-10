@@ -1,6 +1,6 @@
 ---
-name: e
-image: e.png
+name: y
+image: y.png
 location:
 website:
 facebook: https://www.facebook.com
