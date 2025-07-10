@@ -1,5 +1,5 @@
 ---
-name: y
+name: 'y'
 image: y.png
 location:
 website:
