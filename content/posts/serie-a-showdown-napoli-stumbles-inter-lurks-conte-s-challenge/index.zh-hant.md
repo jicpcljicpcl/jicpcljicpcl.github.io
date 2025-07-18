@@ -2,7 +2,7 @@
 title: "義甲聯賽：拿坡里失足，國際米蘭逼近 - 孔蒂的挑戰"
 description: "戲劇性的一週，拿坡里錯失良機，國際米蘭趁勢追擊。孔蒂的拿坡里計畫是否正面臨危機？"
 date: 2025-07-18T02:08:21.270-04:00
-authors: 'y'
+authors: ['y']
 featured: true
 draft: false
 pinned: false

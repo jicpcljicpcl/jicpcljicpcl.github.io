@@ -2,7 +2,7 @@
 title: '切爾西青訓學院內幕：一位球探的故事'
 description: '一名前球探揭示了為何像穆夏拉這樣的球星會離開切爾西，並分享了俱樂部著名青訓學院的幕後故事。'
 date: 2025-07-18T04:02:17.645-04:00
-authors: 'y'
+authors: ['y']
 featured: true
 draft: false
 pinned: false

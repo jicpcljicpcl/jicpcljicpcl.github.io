@@ -2,7 +2,7 @@
 title: "Serie A Showdown: Napoli Stumbles, Inter Lurks - Conte's Challenge"
 description: "A dramatic week in Serie A saw Napoli squander a golden opportunity, while Inter gained ground. Is Conte's Napoli project already facing a crisis?"
 date: 2025-07-18T02:08:21.270-04:00
-authors: 'y'
+authors: ['y']
 featured: true
 draft: false
 pinned: false
