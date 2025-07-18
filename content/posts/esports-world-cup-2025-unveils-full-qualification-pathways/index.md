@@ -2,7 +2,7 @@
 title: "Esports World Cup 2025 Unveils Full Qualification Pathways"
 description: "The Esports World Cup Foundation (EWCF) has unveiled its official Road to EWC initiative, a global qualifier system for the upcoming Esports World Cup 2025, set to take place in Riyadh, Saudi Arabia from July 7 to August 24."
 date: 2025-05-11T01:13:31+08:00
-authors: [w]
+authors: 'y'
 featured: true
 draft: false
 reward: false

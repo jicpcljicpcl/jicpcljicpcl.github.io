@@ -2,14 +2,14 @@
 title: 'Inside Chelsea''s Academy: A Scout''s Story'
 description: 'A former scout reveals why stars like Jamal Musiala left Chelsea and shares behind-the-scenes stories of the club''s famed academy.'
 date: 2025-07-18T04:02:17.645-04:00
-authors: [y]
+authors: 'y'
 featured: true
 draft: false
 pinned: false
 category: esport
-subcategory: esport
+subcategory: 
 image: cover.jpeg
-slug: basketball/nba/inside-chelsea-s-academy-a-scout-s-story
+slug: esport/inside-chelsea-s-academy-a-scout-s-story
 tags:
   - Top players and Club News
   - Chelsea
