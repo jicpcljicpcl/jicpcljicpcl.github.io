@@ -49,10 +49,10 @@ dateFormat = ":date_long"
     url = "/"
     weight = 1
 
-  # [[menu.main]]
-  #   name = "football"
-  #   url = "/football/"
-  #   weight = 2
+  [[menu.main]]
+    name = "football"
+    url = "/football/"
+    weight = 2
 
   # [[menu.main]]
   #   name = "basketball"

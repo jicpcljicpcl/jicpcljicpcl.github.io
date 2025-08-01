@@ -514,6 +514,8 @@ other="法甲"
 other="美職聯"
 [subcategory_football_Saudi_Pro_League]
 other="沙特職業聯賽"
+[subcategory_football_uel]
+other = "歐聯"
 ## Biggest Leagues of fifa
 [subcategory_football_worldcup]
 other="FIFA 世界盃"
@@ -531,6 +533,8 @@ other="FIFA 中北美洲盃"
 other="FIFA 南美洲盃"
 [subcategory_football_uefa]
 other="FIFA 歐洲聯賽"
+[subcategory_football_fifayouth]
+other = "FIFA 青年盃"
 
 # Biggest Leagues of basketball
 [subcategory_basketball_nba]

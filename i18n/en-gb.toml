@@ -515,19 +515,22 @@ other="Tags"
 # -------------------------------
 # Biggest Leagues of football
 [subcategory_football_epl]
-other = "English Premier League"
+other = "Premier League (EPL)"
 [subcategory_football_laliga]
 other = "La Liga"
 [subcategory_football_bundesliga]
 other = "Bundesliga"
 [subcategory_football_seriea]
-other = "Serie A"
-[subcategory_football_ligue1]
-other = "Ligue 1"
+other = "Serie A (ITA)"
+[subcategory_football_ligueone]
+other = "Ligue 1 (FRA)"
 [subcategory_football_mls]
 other = "Major League Soccer"
 [subcategory_football_Saudi_Pro_League]
 other = "Saudi Pro League"
+[subcategory_football_uel]
+other = "Europa"
+
 ## Biggest Leagues of FIFA
 [subcategory_football_worldcup]
 other = "FIFA World Cup"
@@ -545,6 +548,8 @@ other = "CONCACAF Gold Cup"
 other = "CONMEBOL Championship"
 [subcategory_football_uefa]
 other = "UEFA Nations League"
+[subcategory_football_fifayouth]
+other = "FIFA U-20 / U-17 / Youth Tournaments"
 
 # Biggest Leagues of basketball
 [subcategory_basketball_nba]
@@ -558,9 +563,9 @@ other = "FIBA (International Basketball Federation)"
 
 # Biggest Leagues of esports
 [subcategory_esport_lol]
-other = "League of Legends"
+other = "League of Legends (LOL)"
 [subcategory_esport_csgo]
-other = "CS:GO"
+other = "CS:GO / CS2"
 [subcategory_esport_dota2]
 other = "Dota 2"
 [subcategory_esport_ow]

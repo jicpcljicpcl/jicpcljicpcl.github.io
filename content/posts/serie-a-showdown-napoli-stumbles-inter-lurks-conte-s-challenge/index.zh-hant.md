@@ -3,12 +3,12 @@ title: "義甲聯賽：拿坡里失足，國際米蘭逼近 - 孔蒂的挑戰"
 description: "戲劇性的一週，拿坡里錯失良機，國際米蘭趁勢追擊。孔蒂的拿坡里計畫是否正面臨危機？"
 date: 2025-07-18T02:08:21.270-04:00
 authors: ['y']
-featured: true
+featured: false
 draft: false
 pinned: false
-category: esport
-subcategory: 
-slug: esport/serie-a-showdown-napoli-stumbles-inter-lurks-conte-s-challenge
+category: football
+subcategory: seriea
+slug: football/seriea/serie-a-showdown-napoli-stumbles-inter-lurks-conte-s-challenge
 image: cover.jpeg
 tags:
   - 最新消息
@@ -18,6 +18,7 @@ tags:
   - 安東尼奧·孔蒂
   - 羅馬
   - 義甲冠軍
+  - 頂級球員和俱樂部新聞
 sitemap:
   priority: 0.9
   changefreq: daily

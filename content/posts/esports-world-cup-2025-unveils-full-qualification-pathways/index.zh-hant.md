@@ -3,7 +3,7 @@ title: "2025 電競世界盃（Esports World Cup 2025）公布完整資格賽時
 description: "Esports World Cup Foundation（EWCF）正式啟動全球資格賽計畫《Road to EWC》，為即將於 2025 年 7 月 7 日至 8 月 24 日在 沙烏地阿拉伯利雅德舉辦的 Esports World Cup 提供晉級通道。"
 date: 2025-05-11T01:13:31+08:00
 authors: ['y']
-featured: true
+featured: false
 draft: false
 reward: false
 pinned: true

@@ -3,12 +3,12 @@ title: "Serie A Showdown: Napoli Stumbles, Inter Lurks - Conte's Challenge"
 description: "A dramatic week in Serie A saw Napoli squander a golden opportunity, while Inter gained ground. Is Conte's Napoli project already facing a crisis?"
 date: 2025-07-18T02:08:21.270-04:00
 authors: ['y']
-featured: true
+featured: false
 draft: false
 pinned: false
-category: esport
-subcategory: 
-slug: esport/serie-a-showdown-napoli-stumbles-inter-lurks-conte-s-challenge
+category: football
+subcategory: seriea
+slug: football/seriea/serie-a-showdown-napoli-stumbles-inter-lurks-conte-s-challenge
 image: cover.jpeg
 tags:
   - Top News
@@ -18,6 +18,7 @@ tags:
   - Antonio Conte
   - Roma
   - Scudetto
+  - Top players and Club News
 sitemap:
   priority: 0.9
   changefreq: daily
