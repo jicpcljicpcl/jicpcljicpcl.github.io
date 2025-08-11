@@ -19,7 +19,7 @@ sitemap:
   changefreq: daily
 ---
 
-# **Guehi Eyes Anfield:** Liverpool His Top Choice!
+# ⚽️ **Guehi Eyes Anfield:** Liverpool His Top Choice!
 
 Crystal Palace defender **Marc Guehi** reportedly prefers a move to **Liverpool** over **Newcastle United** this summer, despite interest from both clubs. The England international is looking for a step up in his career.
 
