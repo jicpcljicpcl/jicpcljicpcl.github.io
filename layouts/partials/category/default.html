@@ -24,7 +24,7 @@
         </div>
 
         {{ if gt (.paginator.TotalPages | default 1) 1 }}
-        {{ partial "pagination.html" .paginator }}
+        {{ partial "pagination.html" . }}
         {{ end }}
     </div>
 </section>
