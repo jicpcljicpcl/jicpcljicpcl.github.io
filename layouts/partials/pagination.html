@@ -1,23 +1,20 @@
-{{/* 1. 統一變數：確保 $paginator 永遠是正確的分頁物件 */}}
 {{ $paginator := .Paginator }}
-{{ if not $paginator }}
-  {{ $paginator = . }}
-{{ end }}
 
 {{ if gt $paginator.TotalPages 1 }}
-<div class="container animate">
-  <div class="pagination">
-    <button class="load-more-posts button button--big">Load more posts</button>
-  </div>
-</div>
-{{ end }}
 
+<!-- begin pagination -->
+<div class="container animate">
+<div class="pagination">
+<button class="load-more-posts button button--big">Load more posts</button>
+</div>
+</div>
+
+<!-- end pagination -->
+
+{{ end }}
 <script>
-  var base_url = "",
-    pagination_next_url = base_url + '/posts/page2',
-    
-    // 2. 使用 if/else 智能判斷，處理兩種不同的頁碼變數
-    pagination_next_page_number = '{{ if $paginator.CurrentPage }}{{ add $paginator.CurrentPage.PageNumber 1 }}{{ else }}{{ add $paginator.PageNumber 1 }}{{ end }}',
-    
-    pagination_available_pages_number = '{{ $paginator.TotalPages }}';
+var base_url = "",
+pagination_next_url = base_url + '/posts/page2',
+pagination_next_page_number = '{{ add .Paginator.PageNumber 1 }}',
+pagination_available_pages_number = '{{ .Paginator.TotalPages }}';
 </script>
