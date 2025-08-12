@@ -1,20 +1,15 @@
-{{ $paginator := .Paginator }}
+{{ $p := . }}
 
-{{ if gt $paginator.TotalPages 1 }}
+{{ if gt $p.TotalPages 1 }}
+  <div class="container animate">
+    <div class="pagination">
+      <button class="load-more-posts button button--big">Load more posts</button>
+    </div>
+  </div>
 
-<!-- begin pagination -->
-<div class="container animate">
-<div class="pagination">
-<button class="load-more-posts button button--big">Load more posts</button>
-</div>
-</div>
-
-<!-- end pagination -->
-
+  <script>
+    var pagination_next_url = {{ with $p.Next }}"{{ .URL }}"{{ else }}""{{ end }};
+    var pagination_next_page_number = {{ if $p.HasNext }}"{{ $p.Next.PageNumber }}"{{ else }}""{{ end }};
+    var pagination_available_pages_number = "{{ $p.TotalPages }}";
+  </script>
 {{ end }}
-<script>
-var base_url = "",
-pagination_next_url = base_url + '/posts/page2',
-pagination_next_page_number = '{{ add .Paginator.PageNumber 1 }}',
-pagination_available_pages_number = '{{ .Paginator.TotalPages }}';
-</script>
