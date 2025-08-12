@@ -19,7 +19,7 @@ sitemap:
   changefreq: daily
 ---
 
-# Bundesliga Clubs Interested in Chelsea's Gilchrist
+# ⚽️ Bundesliga Clubs Interested in Chelsea's Gilchrist
 
 **Alfie Gilchrist** is likely to leave **Chelsea** this summer, with several **Bundesliga** teams showing interest! After spending last season on loan with Sheffield United, the young defender is looking for a new club where he can get more playing time.
 
