@@ -12,7 +12,6 @@ image: cover.jpeg
 slug: football/laliga/flick-eyes-woltemade-as-lewandowski-s-barcelona-successor
 tags:
   - 轉會
-  - Trades & Transfer
   - 巴塞隆納
   - 漢斯·弗利克
 sitemap:
