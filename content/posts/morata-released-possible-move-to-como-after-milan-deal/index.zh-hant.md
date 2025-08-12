@@ -12,7 +12,6 @@ image: cover.jpeg
 slug: football/seriea/morata-released-possible-move-to-como-after-milan-deal
 tags:
   - 轉會
-  - Trades & Transfer
   - 艾華路·莫拉達
   - 科莫
 sitemap:

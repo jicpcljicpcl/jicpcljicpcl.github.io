@@ -1,5 +1,5 @@
 ---
-title: Morata Released: Possible Move to Como After Milan Deal?
+title: 'Morata Released: Possible Move to Como After Milan Deal?'
 description: Alvaro Morata's loan to Galatasaray is over, fueling rumors of a transfer to Como after a deal involving AC Milan.
 date: 2025-08-12T02:47:17.639-04:00
 authors: ['e']
