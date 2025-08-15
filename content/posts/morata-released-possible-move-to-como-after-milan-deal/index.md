@@ -42,3 +42,4 @@ Several factors could be behind this unexpected move:
 ## 🇮🇹 Could Como Be Morata's Next Destination?
 
 🌟 The rumors are strong that **Morata** could be heading to **Como**, which is currently managed by former star Cesc Fabregas. **Como** is looking to strengthen their squad, and a player with **Morata's** experience would be a valuable addition. This move would see him return to Italy, where he previously played for Juventus.
+```
