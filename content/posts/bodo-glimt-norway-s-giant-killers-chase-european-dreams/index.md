@@ -1,8 +1,8 @@
 ---
-title: Bodo/Glimt: Norway's Giant Killers Chase European Dreams
-description: Discover the unique story of Bodo/Glimt, a Norwegian club making waves in European football.
+title: "Bodo/Glimt: Norway's Giant Killers Chase European Dreams"
+description: "Discover the unique story of Bodo/Glimt, a Norwegian club making waves in European football."
 date: 2025-08-21T23:36:12.218-04:00
-authors: ['c']
+authors: ["c"]
 featured: true
 draft: false
 pinned: false
@@ -11,8 +11,8 @@ subcategory: uefa
 image: cover.jpeg
 slug: football/uefa/bodo-glimt-norway-s-giant-killers-chase-european-dreams
 tags:
-  - Bodo/Glimt
-  - Norway
+  - "Bodo/Glimt"
+  - "Norway"
 sitemap:
   priority: 0.9
   changefreq: daily
