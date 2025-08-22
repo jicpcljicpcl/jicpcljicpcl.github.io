@@ -1,3 +1,5 @@
+fix/yaml-front-matter
+
 ---
 title: "Bodo/Glimt: Norway's Giant Killers Chase European Dreams"
 description: "Discover the unique story of Bodo/Glimt, a Norwegian club making waves in European football."
@@ -15,7 +17,7 @@ tags:
   - "Norway"
 sitemap:
   priority: 0.9
-  changefreq: daily
+  changefreq: "daily"
 ---
 
 # Bodo/Glimt: From Arctic Circle to European Stage! 
