@@ -1,6 +1,6 @@
 ---
 title: "Bodo/Glimt: Norway's Giant Killers Chase European Dreams"
-description: "Discover the unique story of Bodø/Glimt, a Norwegian club making waves in European football."
+description: "Discover the unique story of Bodo/Glimt, a Norwegian club making waves in European football."
 date: 2025-08-21T23:36:12-04:00
 authors: ["c"]
 featured: true
