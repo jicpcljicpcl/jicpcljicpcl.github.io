@@ -18,7 +18,6 @@ sitemap:
   priority: 0.9
   changefreq: "daily"
 ---
-
 # **The MongolZ Achieve the Unthinkable: Win Esports World Cup 2025!**
 
 The **MongolZ** have emerged as champions of the Esports World Cup 2025 in Counter-Strike 2, pulling off a major upset against the favored team, **Aurora**. The victory marks a significant milestone for the team and the Mongolian esports scene.
