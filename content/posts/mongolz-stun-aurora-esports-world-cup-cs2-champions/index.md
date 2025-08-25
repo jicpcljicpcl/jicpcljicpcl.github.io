@@ -1,22 +1,22 @@
 ---
-title: MongolZ Stun Aurora: Esports World Cup CS2 Champions!
-description: The MongolZ pulled off a stunning upset against Aurora to win the Esports World Cup 2025 in Counter-Strike 2!
+title: "MongolZ Stun Aurora: Esports World Cup CS2 Champions!"
+description: "The MongolZ pulled off a stunning upset against Aurora to win the Esports World Cup 2025 in Counter-Strike 2!"
 date: 2025-08-24T23:06:46.963-04:00
-authors: ['c']
+authors: ["c"]
 featured: true
 draft: false
 pinned: false
-category: esport
-subcategory: csgo
-image: cover.png
-slug: esport/csgo/mongolz-stun-aurora-esports-world-cup-cs2-champions
+category: "esport"
+subcategory: "csgo"
+image: "cover.png"
+slug: "esport/csgo/mongolz-stun-aurora-esports-world-cup-cs2-champions"
 tags:
-  - CS2
-  - MongolZ
-  - Aurora
+  - "CS2"
+  - "MongolZ"
+  - "Aurora"
 sitemap:
   priority: 0.9
-  changefreq: daily
+  changefreq: "daily"
 ---
 
 # **The MongolZ Achieve the Unthinkable: Win Esports World Cup 2025!**
