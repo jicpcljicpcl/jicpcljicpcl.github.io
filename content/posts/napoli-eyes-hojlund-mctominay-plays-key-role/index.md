@@ -1,22 +1,24 @@
 ---
-title: Napoli Eyes Hojlund: McTominay Plays Key Role
-description: Scott McTominay reportedly contacts Rasmus Hojlund to encourage a move to Napoli, who are preparing a €45 million bid.
-date: 2025-08-24T22:47:23.477-04:00
-authors: ['e']
-featured: false
+title: "Napoli Eyes Højlund: McTominay Plays Key Role"
+description: "Short one-sentence teaser."
+date: 2025-08-24T22:12:20.405-04:00
+authors: ["c"]
+featured: true
 draft: false
 pinned: false
-category: football
-subcategory: seriea
-image: cover.jpeg
-slug: football/seriea/napoli-eyes-hojlund-mctominay-plays-key-role
+category: "football"
+subcategory: "seriea"
+image: "cover.jpg"
+url: "https://example.com/article"
+ogimage: "https://placehold.co/1200x630.jpg?text=Esports+News"
 tags:
-  - Trades & Transfer
-  - Napoli
-  - Hojlund
+  - "Trades & Transfer"
+  - "Napoli"
+  - "Rasmus Højlund"
+  - "Scott McTominay"
 sitemap:
   priority: 0.9
-  changefreq: daily
+  changefreq: "daily"
 ---
 
 # McTominay Reaches Out: Can He Convince Hojlund to Join Napoli?
