@@ -1,1 +1,0 @@
-Okay, I'm ready. Please provide the article you want me to rewrite. I will follow all the instructions meticulously.
