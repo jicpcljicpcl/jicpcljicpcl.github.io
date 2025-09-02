@@ -1,22 +1,22 @@
 ---
 title: "Complexity Gaming Ends CS:GO Journey After 22 Years"
 description: "Complexity Gaming leaves Counter-Strike after 22 years due to financial challenges."
-date: "2025-09-02T00:02:40.176-04:00"
-authors: ['c']
+date: "2025-09-02T00:02:40-04:00"
+authors:
+  - "c"
 featured: true
 draft: false
 pinned: false
-category: esport
-subcategory: csgo
+category: "esport"
+subcategory: "csgo"
 image: "cover.jpg"
-slug: "esport/csgo/complexity-gaming-ends-cs-go-journey-after-22-years"
-
+slug: "complexity-gaming-ends-cs-go-journey-after-22-years"
 tags:
   - "Complexity Gaming"
   - "CS:GO"
 sitemap:
   priority: 0.9
-  changefreq: daily
+  changefreq: "daily"
 ---
 
 # 💔 Complexity Gaming Bids Farewell to Counter-Strike After 22 Years!
