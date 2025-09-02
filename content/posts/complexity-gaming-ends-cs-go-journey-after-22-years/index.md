@@ -6,8 +6,8 @@ authors: ['c']
 featured: true
 draft: false
 pinned: false
-category: "esport"
-subcategory: "csgo"
+category: esport
+subcategory: csgo
 image: "cover.jpg"
 slug: "complexity-gaming-ends-cs-go-journey-after-22-years"
 tags:
