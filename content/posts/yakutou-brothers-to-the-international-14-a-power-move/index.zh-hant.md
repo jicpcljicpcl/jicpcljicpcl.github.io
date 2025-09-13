@@ -1,15 +1,15 @@
 ---
-title: "雅庫托夫兄弟隊進軍Dota 2國際邀請賽14：強勢崛起？"
-description: "雅庫托夫兄弟隊會是TI14的黑馬嗎？"
+title: "雅庫托夫兄弟隊進軍 Dota 2 國際邀請賽 14：強勢崛起？"
+description: "雅庫托夫兄弟隊會是 TI14 的黑馬嗎？"
 date: "2025-09-08T04:01:16.255Z"
-authors: ['c']
+authors: ["c"]
 featured: true
 draft: false
 pinned: false
-category:
-subcategory:
+category: esport
+subcategory: dota2
 image: "cover.png"
-slug: "subcategory:/image: cover.png/yakutou-brothers-to-the-international-14-a-power-move"
+slug: "esport/dota2/yakutov-brothers-to-the-international-14-a-power-move"
 tags:
   - "轉會"
   - "雅庫托夫兄弟隊"
